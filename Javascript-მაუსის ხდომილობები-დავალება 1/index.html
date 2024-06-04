@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        button{
+            width: 100px;
+            height: 60px;
+            border-radius: 20px;
+            border: none;
+            font-size: 24px;
+            color: grey;
+        }
+    </style>
+    <button onclick="turn()" id="btn">off</button>
+    <script>
+        function turn(){
+            var turn = document.getElementById("btn");
+            if(turn.innerHTML =="off"){
+                turn.innerHTML = "on";
+                turn.style.backgroundColor = "blue";
+                turn.style.height = "60px";
+                turn.style.width = "100px"
+                turn.style.borderRadius = "20px";
+                turn.style.border = "none"
+                turn.style.color = "white";
+                turn.style.fontSize = "24px"
+            }else{
+                turn.innerHTML = "off";
+                turn.style.height = "60px";
+                turn.style.width = "100px"
+                turn.style.backgroundColor = "lightGrey";
+                turn.style.color = "grey";
+
+            }
+        }
+    </script>
+</body>
+</html>
